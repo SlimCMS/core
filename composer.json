@@ -1,0 +1,13 @@
+{
+    "name": "slimcms/core",
+    "description": "Core slimcms",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slimcms\\": "src/"
+        }
+    }
+}
