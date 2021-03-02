@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SlimCms;
+namespace Slimcms;
 
 use DI\Container;
 use Slimcms\Module\Interfaces\ModuleManagerInterface;
@@ -11,10 +11,6 @@ use Slimcms\Route\Interfaces\RouterInterface;
 use Slimcms\Route\Router;
 use function DI\autowire;
 
-/**
- * Class Core
- * @package SlimCms
- */
 class Core
 {
     /** @var Container */
@@ -40,7 +36,7 @@ class Core
         $container->set(ModuleManagerInterface::class, autowire(ModuleManager::class));
     }
 
-    public function work(): void
+    public function webWork(): void
     {
         $moduleManager = $this->container->get(ModuleManagerInterface::class);
         $moduleManager->boot();

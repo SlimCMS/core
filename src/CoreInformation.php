@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SlimCms;
+namespace Slimcms;
 
 class CoreInformation
 {

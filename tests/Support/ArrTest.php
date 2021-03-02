@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\Support;
 
-use SlimCms\Support\Arr;
+use Slimcms\Support\Arr;
 use PHPUnit\Framework\TestCase;
 
 class ArrTest extends TestCase
@@ -19,7 +19,7 @@ class ArrTest extends TestCase
             ],
         ],
     ];
-    
+
     public function testGet(): void
     {
         $this->assertSame(Arr::get('name', self::ARRAY), self::ARRAY['name']);
